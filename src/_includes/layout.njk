@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            {% block title %}Music Pie Chart{% endblock %}
+        </title>
+        <!-- Include TailwindCSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+        <!-- Include Alpine.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@ryangjchandler/alpine-clipboard@2.x.x/dist/alpine-clipboard.js" defer></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script defer data-domain="musicpiechart.com" src="https://stats.senty.com.au/js/script.js"></script>
+        {# <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723218062742398"
+            crossorigin="anonymous"></script> #}
+        <meta name="description" content="Analyze your Spotify listening history">
+        <meta name="author" content="Music Pie Chart">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Music Pie Chart">
+        <meta property="og:description" content="Analyze your Spotify listening history.">
+        <meta property="og:image" content="https://musicpiechart.com/img/facebook.jpg">
+        <meta property="og:url" content="https://musicpiechart.com/">
+        <meta property="og:site_name" content="Music Pie Chart">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="en_US">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Music Pie Chart">
+        <meta property="twitter:description" content="Analyze your Spotify listening history.">
+        <meta property="twitter:image" content="https://musicpiechart.com/img/twitter.jpg">
+        <meta property="twitter:url" content="https://musicpiechart.com">
+        <meta property="twitter:site" content="@musicpiechart">
+        <meta property="twitter:creator" content="@musicpiechart">
+        <link rel="canonical" href="https://musicpiechart.com">
+        <link rel="icon" href="/img/favicon.ico">
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+          <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'metropolis': ['Metropolis', 'sans'],
+                    }
+                }
+            }
+            }
+        </script>
+
+        {# load Metropolis fonts (otf) from fonts folder#}
+        <link rel="preload" href="/fonts/Metropolis-Black.otf" as="font" type="font/otf" crossorigin>
+        <link rel="preload" href="/fonts/Metropolis-Regular.otf" as="font" type="font/otf" crossorigin>
+        <link rel="preload" href="/fonts/Metropolis-SemiBold.otf" as="font" type="font/otf" crossorigin>
+        <link
+        rel="manifest" href="/img/site.webmanifest">
+        <!-- Meta Tags -->
+        {% block meta %}{% endblock %}
+        <!-- CSS & JS Links -->
+        {% block head %}{% endblock %}
+    </head>
+    <body class="{% block body_class %} bg-white {% endblock %}"> {% block content %}{% endblock %}{% block scripts %}{% endblock %}
+        {% include "footer.njk" %}
+    </body>
+</html>

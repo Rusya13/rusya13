@@ -1,0 +1,59 @@
+---
+title: Terms & Conditions
+date_modified: "2023-11-29"
+text: |
+
+    By accessing or using the Music Pie Chart platform, you agree to abide by the following terms and conditions. If you do not agree with these terms, please do not access or use Music Pie Chart.
+
+    ### 1. Acceptance of Terms
+
+    By using Music Pie Chart, you signify your acceptance of these terms. If you do not agree to these terms, please do not use our service. Your continued use of Music Pie Chart following the posting of changes to these terms will be deemed your acceptance of those changes.
+
+    ### 2. Use of Service
+
+    **2.1. Grant of License**: Music Pie Chart grants you a limited, non-exclusive, non-transferable license to access and use the platform for personal and non-commercial purposes, in accordance with these terms.
+
+    **2.2. Restrictions**: You may not use the service for any illegal activities or to violate any laws in your jurisdiction.
+
+    ### 3. User Account
+
+    **3.1. Account Creation**: To access certain features, you may need to log in with your Spotify account.
+
+    **3.2. Account Responsibility**: You are responsible for maintaining the confidentiality of your login credentials.
+
+    ### 4. Intellectual Property
+
+    All content, including but not limited to, the design, graphics, and text of Music Pie Chart are owned by or licensed to Music Pie Chart and protected by copyright and trademark laws.
+
+    ### 5. Limitation of Liability
+
+    Music Pie Chart will not be liable for any direct, indirect, incidental, or consequential damages that result from the use or inability to use our platform.
+
+    ### 6. Termination
+
+    We reserve the right to terminate or suspend access to our service without prior notice for any breach of these terms.
+
+    ### 7. Changes to Terms
+
+    Music Pie Chart may modify these terms from time to time. You are expected to periodically review these terms and stay informed of any changes.
+
+    ### 8. Governing Law
+
+    These terms shall be governed by the laws of the state of Victoria, Australia. Any legal actions or disputes shall be filed in the courts of the state of Victoria, Australia, and you hereby consent to the jurisdiction of such courts.
+
+    ### 9. Contact Information
+
+    For any questions or concerns regarding these terms, please contact us at:
+    - Email: hello@senty.com.au
+
+---
+{% extends "layout.njk" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+    {% include "header.njk" %}
+    <article class="prose mx-auto max-w-3xl mt-16 px-4 lg:px-0">
+        <h1>{{ title }}</h1>
+        <p>Effective date: {{ date_modified }}</p>
+        <div>{{ text | md | safe }}</div>
+    </article>
+{% endblock %}}

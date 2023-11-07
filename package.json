@@ -1,0 +1,30 @@
+{
+  "name": "musicpiechart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rusya13/musicpiechart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rusya13/musicpiechart/issues"
+  },
+  "homepage": "https://github.com/Rusya13/musicpiechart#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "dotenv": "^16.3.1",
+    "markdown-it": "^13.0.2",
+    "moment": "^2.29.4",
+    "vite": "^4.5.0",
+    "vite-plugin-eleventy": "^0.3.1"
+  }
+}

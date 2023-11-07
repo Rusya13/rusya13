@@ -1,0 +1,70 @@
+---
+title: Privacy Policy
+date_modified: "2023-11-29"
+text: |
+
+    ### Introduction
+
+    At Music Pie Chart, we prioritize your privacy. This policy outlines how we collect, use, and protect your personal information when you use our service.
+
+    ### 1. Information We Collect
+
+    **1.1. Directly Provided Data**: When you use Music Pie Chart, you log in with your Spotify account. We access:
+    - Your Spotify username.
+    - Your listening history for generating charts.
+
+    **1.2. Cookies**: We use cookies to enhance your user experience, but they don't store personal information.
+
+    ### 2. How We Use Your Information
+
+    **2.1. Generate Charts**: We use your listening history to generate pie charts. This data is processed temporarily and is not stored on our servers.
+
+    **2.2. Improve User Experience**: By understanding user interactions, we aim to improve Music Pie Chart and cater it to your needs.
+
+    ### 3. Data Sharing and Disclosure
+
+    **3.1. Third-Party Services**: We use Spotify's official API to access your listening history. We do not share your data with other third-party services.
+
+    **3.2. Legal Obligations**: We may disclose your information if required by law or in response to legal processes.
+
+    ### 4. Data Protection
+
+    **4.1. Security Measures**: We employ industry-standard security measures to protect your data.
+
+    **4.2. Data Retention**: We only process your data temporarily to generate pie charts. We do not store your Spotify credentials or listening history.
+
+    ### 5. Children's Privacy
+
+    Music Pie Chart is not intended for children under the age of 13. We do not knowingly collect or solicit information from children under 13.
+
+    ### 6. Changes to This Policy
+
+    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+
+    ### 7. Your Rights
+
+    You have the right to:
+    - Know what personal data we hold about you.
+    - Ask for a copy of your personal data.
+    - Ask us to correct any incorrect data.
+    - Withdraw any consent you previously gave us.
+
+    ### 8. Contact Us
+
+    For any questions or concerns regarding this privacy policy, please contact us at:
+    - Email: hello@senty.com.au
+
+---
+
+{% extends "layout.njk" %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block content %}
+    {% include "header.njk" %}
+    <article class="prose mx-auto max-w-3xl mt-16 px-4 lg:px-0">
+        <h1>{{ title }}</h1>
+        <p>Effective date: {{ date_modified }}</p>
+        <div>{{ text | md | safe }}</div>
+    </article>
+{% endblock %}
