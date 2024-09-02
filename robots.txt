@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-SiteMap: https://musicpiechart.com/sitemap.xml
+Disallow: /
