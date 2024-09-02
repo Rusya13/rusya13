@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "eleventy"
+    "build": "echo \"No build command specified\""
   },
   "repository": {
     "type": "git",
